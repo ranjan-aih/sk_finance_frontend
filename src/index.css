@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --font-inter: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-albert: 'Albert Sans', sans-serif;
+
+  --color-primary-background: #ffffff;
+  --color-secondary-background: #242424;
+
+  --color-primary-black: #000000;
+  --color-primary-white: #ffffff;
+}
+
+@layer utilities {
+  .font-albert {
+    font-family: var(--font-albert);
+  }
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+}
